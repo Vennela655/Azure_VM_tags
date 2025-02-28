@@ -13,7 +13,7 @@ function App() {
     useEffect(() => {
         const fetchHierarchy = async () => {
             try {
-                const response = await fetch('${process.env.REACT_APP_API_URL}/api/hierarchy');
+                const response = await fetch(`${process.env.REACT_APP_API_URL}/api/hierarchy`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch hierarchy');
                 }
