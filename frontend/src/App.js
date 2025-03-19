@@ -13,7 +13,7 @@ function App() {
     useEffect(() => {
         const fetchHierarchy = async () => {
             try {
-                const response = await fetch('http://backend:5000/api/hierarchy');
+                const response = await fetch('http://172.190.16.223:5000/api/hierarchy');
                 if (!response.ok) {
                     throw new Error('Failed to fetch hierarchy');
                 }
